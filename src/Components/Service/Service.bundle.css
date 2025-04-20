@@ -106,3 +106,43 @@ hr {
   background-color: #fb8f11;
   margin: auto;
 }
+
+.main-title::after {
+  position: absolute;
+  content: "";
+  width: 4000px;
+  height: 2px;
+  background-color: #01788e99;
+  bottom: -20px;
+}
+
+/* ********************************************************************** */
+
+/* Start Two Photos */
+
+.two-photos {
+  background-color: #f8f8f8;
+}
+
+.google-part img {
+  width: 250px;
+  height: 103px;
+}
+
+.styling-google-paragraph {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.div-button {
+  color: #0b6c7e !important;
+}
+
+.div-button:hover {
+  color: #0b6c7e !important;
+}
+
+.button-two-photos-styling {
+  border: 1px solid #0b6c7e;
+}

@@ -12,6 +12,8 @@ import Service4 from "../../assets/service4.jpeg";
 import Service5 from "../../assets/service5.jpeg";
 import Service6 from "../../assets/service6.jpeg";
 
+import GoogleServiceImage from "../../assets/googleServiceImage.png";
+
 function Service() {
 
   const services = [
@@ -97,7 +99,7 @@ function Service() {
   </div>
   {/* ************************************************************************/}
 
-  <div className="container m-5 p-5">
+  <div className="container m-5 p-5 position-relative">
   <h2>احجز زيارة اصلاح في منزلك في مصر.</h2>
     
       <ul className="mt-4">
@@ -109,17 +111,18 @@ function Service() {
       </ul>
 
    
-      <p className="text-end mt-3" style={{ cursor: "pointer" }}>
+      <p className="text-end mt-3 " style={{ cursor: "pointer" }}>
           عرض المزيد <span className="ms-1">⌄</span>
-        </p>
+      </p>
+      
   </div>
   {/* ************************************************************************/}
-  <hr/>
+  
   {/* ************************************************************************/}
 
-  <div className="services-section py-5">
-  <div className="container">
-    <h4 className="section-title mb-5 ">خدماتنا المتخصصة</h4>
+  <div className="services-section py-5 position-relative">
+  <div className="container ">
+    <h4 className="section-title mb-5  ">خدماتنا المتخصصة</h4>
 
     <div className="row g-4 justify-content-center">
       {services.slice(0, 6).map((service, index) => (
@@ -152,6 +155,49 @@ function Service() {
     </div>
   </div>
 </div>
+
+      {/* ***************************************************************** */}
+
+      {/* Start Two Photos */}
+      <div className="two-photos text-center pt-5 pb-5">
+        <div className="container">
+          <div className="row ">
+            <div className="col-md-12 col-lg-6">
+              <div className="google-part">
+                <img className="img-fluid" src={GoogleServiceImage} alt="Google Service Image" />
+                <p className="mt-5 mb-5 styling-google-paragraph">
+                What do customers say about Service Market
+                <br/>
+                4.7/5.0
+
+                <br/>
+                10397 reviews as of March 2025
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className="div-button">
+            <button className="btn button-two-photos-styling">قراءة جميع تقييمات العملاء</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+      {/* End Two Photos */}
+      {/* ***************************************************************** */}
 
     </>
   )
