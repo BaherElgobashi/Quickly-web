@@ -1,9 +1,4 @@
 body {
-  direction: rtl;
+  direction: rtl !important;
   font-family: "Cairo", sans-serif !important;
-}
-
-.row {
-  margin-left: 0;
-  margin-right: 0;
 }

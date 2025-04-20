@@ -8,24 +8,31 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Home.bundle.css";
 
 
-import HomePage1 from "../../assets/home.png";
-import HomePage2 from "../../assets/home.png";
-import HomePage3 from "../../assets/home.png";
+import HomePage1 from "../../../src/assets/home.png";
+import HomePage2 from "../../../src/assets/home.png";
+import HomePage3 from "../../../src/assets/home.png";
 
-import MobileHomePageImage from "../../assets/MobileHomePage.png";
-import AppstoreImage from "../../assets/AppStoreHome.png";
-import GooglePlayImage from "../../assets/googleplayHome.png";
+import MobileHomePageImage from "../../../src/assets/MobileHomePage.png";
+import AppstoreImage from "../../../src/assets/AppStoreHome.png";
+import GooglePlayImage from "../../../src/assets/googleplayHome.png";
 
-import Service1 from "../../assets/service1.jpeg";
-import Service2 from "../../assets/service2.jpeg";
-import Service3 from "../../assets/service3.jpeg";
-import Service4 from "../../assets/service4.jpeg";
-import Service5 from "../../assets/service5.jpeg";
-import Service6 from "../../assets/service6.jpeg";
+import Service1 from "../../../src/assets/service1.jpeg";
+import Service2 from "../../../src/assets/service2.jpeg";
+import Service3 from "../../../src/assets/service3.jpeg";
+import Service4 from "../../../src/assets/service4.jpeg";
+import Service5 from "../../../src/assets/service5.jpeg";
+import Service6 from "../../../src/assets/service6.jpeg";
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+
+import Helmet from "../../assets/helmet.png";
+
+
+import ImageOne from "../../../src/assets/one.png";
+import ImageTwo from "../../../src/assets/two.png";
+import ImageThree from "../../../src/assets/three.png";
 
 
 const Images = [HomePage1,HomePage2,HomePage3];
@@ -64,6 +71,31 @@ function Home(){
           desc: 'نقل سهل وتصميم رائع. تم تصميم منصتنا مع وضعك في الاعتبار، مما يجعل كل خطوة ... اقرأ المزيد',
         },
       ];
+
+
+    // ///////////////////////////////////////////////////////////
+
+    const testimonials = [
+      {
+        img: ImageOne,
+        text: 'الموقع رائع وسهل الاستخدام جداً! تمكنت من إدارة حساباتي ومتابعة التقارير المالية بكل سهولة. أحببت التصميم البسيط والتنظيم الواضح للمعلومات، بالتأكيد سأوصي به لأصدقائي!',
+        company: "ABC Company",
+        name: "John Smith, CEO",
+      },
+      {
+        img: ImageTwo,
+        text: 'الموقع رائع وسهل الاستخدام جداً! تمكنت من إدارة حساباتي ومتابعة التقارير المالية بكل سهولة. أحببت التصميم البسيط والتنظيم الواضح للمعلومات، بالتأكيد سأوصي به لأصدقائي!',
+        company: "ABC Company",
+        name: "John Smith, CEO",
+      },
+      {
+        img: ImageThree,
+        text: 'الموقع رائع وسهل الاستخدام جداً! تمكنت من إدارة حساباتي ومتابعة التقارير المالية بكل سهولة. أحببت التصميم البسيط والتنظيم الواضح للمعلومات، بالتأكيد سأوصي به لأصدقائي!',
+        company: "ABC Company",
+        name: "John Smith, CEO",
+      },
+    ];
+
 
 
     // ///////////////////////////////////////////////////////////
@@ -297,7 +329,7 @@ function Home(){
 
         <div className="question pt-5 pb-5">
           <div className="container">
-            <div className="row">
+            <div className="row align-items-center">
               <div className="col-md-12 col-lg-6">
                 <div className="question">
                   
@@ -306,7 +338,8 @@ function Home(){
                       <FontAwesomeIcon icon="fa-solid fa-xmark" />
                       <h6 className="fw-bold">كيف أعرف أن جهازي بحاجة إلى صيانة؟</h6>
                     </div>
-                      <p className="text-black-50">إذا لاحظت أعطالًا متكررة، أصواتًا غير طبيعية، ضعف الأداء، أو توقف الجهاز عن العمل تمامًا، فقد يكون الوقت قد حان للصيانة.</p>
+                      <p className="text-black-50">إذا لاحظت أعطالًا متكررة، أصواتًا غير طبيعية، ضعف الأداء، أو توقف الجهاز عن </p>
+                      <p className="text-black-50">العمل تمامًا، فقد يكون الوقت قد حان للصيانة.</p>
 
                     </div>
 
@@ -364,12 +397,17 @@ function Home(){
               </div>
 
               <div className="col-md-12 col-lg-6">
-                <div className="questions-answers">
-                  <h6>Questions & Answers</h6>
-                  <h2>الاسئلة الشائعة</h2>
+                <div className="questions-answers p-4">
+                  
 
-                  <div className="image">
-                      <img className="img-fluid" src="../../assets/helmet.jpeg" alt="Helmet" />
+                  <div className="image text-center">
+                      <div className="title">
+                          <h6 className="text-start fs-6 question-styling">Questions & Answers</h6>
+                          <h2 className="humors-styling text-end">الاسئلة الشائعة</h2>
+                          <img className="img-fluid image-styling" src={Helmet} alt="helmet image" />
+
+                      </div>
+                      
                   </div>
 
                 </div>
@@ -382,6 +420,61 @@ function Home(){
 
         </div>
         {/* End Question and Answer */}
+
+
+        {/* ********************************************************************************************* */}
+        
+
+        {/* Start What People Say */}
+
+        <div className="container py-5 text-end">
+        < h2 className="fw-bold mb-5 text-end ">ماذا يقول العملاء عنا</h2>
+{/* 
+      <div className="d-flex justify-content-center gap-3 mb-4">
+        <button className="btn btn-light rounded-circle">
+          <i className="bi bi-arrow-left"></i>
+        </button>
+        <button className="btn btn-warning text-white rounded-circle">
+          <i className="bi bi-arrow-right"></i>
+        </button>
+      </div> */}
+
+      <div className="row">
+        {testimonials.map((item, index) => (
+          <div className="col-12 col-md-6 col-lg-4 mb-4" key={index}>
+            <div className="card shadow-sm h-120 card-styling position-relative">
+              <div className="card-body text-center centering-content">
+                <img
+                  src={item.img}
+                  alt="avatar"
+                  className="rounded-circle mb-3 centering-images"
+                  style={{ width: "80px", height: "80px", objectFit: "cover" }}
+                />
+                <div className="">
+                <p className="card-text item-text ">{item.text}</p>
+                <p className="text-muted fw-bold mt-3 item-company">{item.company}</p>
+                <p className="fw-bold item-name">{item.name}</p>
+                
+
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+
+        {/* End What People Say */}
+
+
+
+
+
+
+
+
+
 
 
         {/* ********************************************************************************************* */}

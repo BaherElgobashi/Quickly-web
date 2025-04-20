@@ -26,6 +26,7 @@
 .question {
   position: relative;
   padding-top: 20px;
+  background-color: #f2f4f8;
 }
 
 .main-title::after {
@@ -56,4 +57,68 @@
   padding: 0.5rem 1rem;
   width: 198px;
   height: 76px;
+}
+
+.question-styling {
+  color: #0b378d;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.image-styling {
+  border-radius: 3%;
+  width: 510px;
+  height: 662px;
+}
+
+.humors-styling {
+  font-size: 56px;
+  line-height: 140%;
+}
+
+.style-h2-saying {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+
+.item-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #535558;
+}
+
+.item-company {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.29px;
+  color: #d9d9d9;
+}
+
+.item-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #223140;
+}
+
+.centering-images {
+  position: absolute;
+  bottom: 82%;
+  left: 40%;
+}
+
+.card-styling {
+  width: 378px !important;
+  height: 348px !important;
+  background-color: #ffffff;
+}
+
+.centering-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
