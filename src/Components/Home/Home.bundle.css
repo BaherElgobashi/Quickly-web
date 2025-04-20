@@ -1,0 +1,59 @@
+.mobile-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.google-image-styling,
+.Appstore-image-styling {
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.google-image-styling {
+  width: 254px;
+  height: 73px;
+}
+
+.Appstore-image-styling {
+  width: 219px;
+  height: 150px;
+}
+
+.coloring-bag-section {
+  background-color: #f5e6c4;
+}
+
+.question {
+  position: relative;
+  padding-top: 20px;
+}
+
+.main-title::after {
+  position: absolute;
+  content: "";
+  width: 600px;
+  height: 2px;
+  background-color: #e0e3ea;
+  bottom: -20px;
+  /* left: 50%;
+  transform: translateX(-50%); */
+}
+
+.box {
+  background-color: #151515;
+  width: 510px;
+  height: 286px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3%;
+}
+
+.box .content button {
+  background-color: #fb8f11;
+  color: #ffffff;
+  border-radius: 7%;
+  padding: 0.5rem 1rem;
+  width: 198px;
+  height: 76px;
+}

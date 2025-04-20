@@ -1,0 +1,50 @@
+footer {
+  direction: rtl;
+  background-color: #f5e6c4;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+footer input {
+  border: 1px solid #fff;
+  color: #fff !important;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: none;
+  padding-right: 11px;
+}
+
+.input-field-div {
+  background-color: black;
+}
+
+/* footer input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+} */
+
+/* footer .btn-light:hover {
+  background-color: #f8f9fa;
+  opacity: 0.9;
+} */
+
+.div-input-styling {
+  position: relative;
+}
+
+.button-styling {
+  position: absolute;
+  left: 2%;
+  bottom: 8%;
+  border: none;
+}

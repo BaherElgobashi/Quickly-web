@@ -1,0 +1,108 @@
+.booking-bg {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+  filter: brightness(40%);
+}
+
+.overlay-content {
+  z-index: 2;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.badge-discount .badge-circle {
+  width: 120px;
+  height: 120px;
+  background-color: #dc3545;
+  border: 5px dashed white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-bar {
+  background-color: #2d4e74;
+  color: white;
+  font-size: 0.9rem;
+}
+
+hr {
+  color: 01788e99;
+  background-color: #01788e99;
+  /* top: 48px;
+  right: 50px;
+  bottom: 48px;
+  left: 50px; */
+  width: 1340px;
+  height: 3px;
+}
+
+/* ************************************************************************* */
+
+/* Start Service Section */
+
+/* Services.css */
+.services-section {
+  background-color: #f9f9f9;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.service-title {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.service-description {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.more-btn {
+  background-color: #fb8f11;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.more-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .service-card {
+    padding: 20px;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* End Service Section */
+
+.button-coloring {
+  background-color: #fb8f11;
+  margin: auto;
+}
